@@ -25,11 +25,12 @@ let  myCurry = (func, numArgs) => {
 
         if (arryArgs.length < numArgs) {
             arryArgs.push(number);
-            return _myCurry();
         }
 
         if (arryArgs.length === numArgs) {
-           return func(...arryArgs);
+           return func(...arryArgs) 
+        } else {
+           return _myCurry;  
         }
    }
 
