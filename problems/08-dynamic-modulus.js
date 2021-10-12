@@ -21,7 +21,7 @@
 */
 
 function dynamicModulus(num) {
-   
+      return numToBeDevide => numToBeDevide % num;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

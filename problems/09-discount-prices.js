@@ -17,6 +17,17 @@
 // const discountPrices = (prices, discounts) => prices.map((price, i) =>  '$' + (price * (1 - discounts[i])).toFixed(2));
 
 
+let discountPrices = (arryPrice, arryDiscount) => {
+    let arryFinal = [];
+
+    arryPrice.forEach( (price, idx) => {
+        let priceDiscount = price * (1 -  arryDiscount[idx]);
+        arryFinal.push('$'+ priceDiscount.toFixed(2));
+    })
+
+    return arryFinal;
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
     module.exports = discountPrices;

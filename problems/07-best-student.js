@@ -16,7 +16,20 @@
     
 */
 
+let bestStudent = (...students) => {
+    let bestStudent = null;
+    let bestScore; 
+    students.forEach(student => { 
+        
+        if (bestScore === undefined || student.points > bestScore) {
+            bestScore = student.points ;
+            bestStudent = student.name;
+        }     
+    })
 
+
+    return bestStudent;
+}
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

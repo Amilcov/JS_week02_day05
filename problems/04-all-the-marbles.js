@@ -13,6 +13,13 @@ All the marbles:
     console.log(allTheMarbles()) // prints 0;
 */
 
+let allTheMarbles = function (...marbles) {
+    let weight = 0;
+    
+    marbles.forEach(marble => {weight += marble['weight']})
+
+    return weight;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

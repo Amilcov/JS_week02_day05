@@ -10,7 +10,18 @@
 */
 
 function characterCount(string) {
-    
+    let charObject = {};
+    let chars = string.split("");
+
+    chars.forEach( char => {
+        if (charObject[char] === undefined) {
+            charObject[char] = 0;
+        }
+        charObject[char]++;
+
+    })
+
+    return charObject;
 }
 
 

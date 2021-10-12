@@ -14,7 +14,13 @@
 */
 
 function commonValues(obj1, obj2) {
-    
+    let arrayCommonValues = [];
+    let obj1Values = Object.values(obj1);
+    let obj2Values = Object.values(obj2);
+
+    arrayCommonValues = obj1Values.filter(e => obj2Values.includes(e));
+
+    return arrayCommonValues
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

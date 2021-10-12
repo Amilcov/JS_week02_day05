@@ -13,7 +13,24 @@ Least and Most Expensive Toys:
 */
 
 function leastAndMostExpensive(catalog) {
-    
+    let arryToys = [];
+    let min;
+    let max;
+
+    for (toy in catalog) {
+
+        if (min === undefined || min > catalog[toy]) {
+            min = catalog[toy];
+            arryToys[0] = toy;
+        }
+
+        if (max=== undefined || max < catalog[toy]) {
+            max = catalog[toy];
+            arryToys[1] = toy;
+        }
+
+    }
+    return arryToys;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

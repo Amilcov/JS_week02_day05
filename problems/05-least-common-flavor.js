@@ -16,6 +16,17 @@ Least common flavor:
 
 function leastCommonFlavor(candyBag) {
 
+    let name = null;
+    let min;
+
+    for (flavor in candyBag){
+        if (name === null || min > candyBag[flavor]) {
+            name = flavor;
+            min = candyBag[flavor];
+        }
+    };
+
+    return name;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

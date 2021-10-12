@@ -18,6 +18,18 @@
     console.log(itemsWithinBudget(200, items2)) // prints ['omakase bento box', 'medicine']
 */
 
+let itemsWithinBudget = (buget, items) => {
+    let itemsObject = [];
+     items.forEach(item => {
+
+          if (item.price <= buget) {
+              itemsObject.push(item.name); 
+          }
+
+    });
+     
+    return itemsObject;
+}
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
